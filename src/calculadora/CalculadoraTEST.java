@@ -56,7 +56,7 @@ class CalculadoraTEST {
 		assertEquals(esperado, resultado);
 	}
 	
-	@Test //@Test(expected = ArithmeticException.class) --> JUnit 4"
+	@Test //@Test(expected = ArithmeticException.class) --> JUnit 4
 	public void testDivPorCero() {
 		assertThrows(ArithmeticException.class, () -> calc.div(5,0));
 	}
